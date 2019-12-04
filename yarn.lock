@@ -1887,7 +1887,7 @@ babel-plugin-transform-react-remove-prop-types@0.4.24:
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.24.tgz#f2edaf9b4c6a5fbe5c1d678bfb531078c1555f3a"
   integrity sha512-eqj0hVcJUR57/Ug2zE1Yswsw4LhuqqHhD+8v120T1cl3kjg76QwtyBrdIk4WVwK+lAhBJVYCd/v+4nc4y+8JsA==
 
-babel-preset-fbjs@^3.1.2, babel-preset-fbjs@^3.2.0:
+babel-preset-fbjs@^3.1.2, babel-preset-fbjs@^3.2.0, babel-preset-fbjs@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/babel-preset-fbjs/-/babel-preset-fbjs-3.3.0.tgz#a6024764ea86c8e06a22d794ca8b69534d263541"
   integrity sha512-7QTLTCd2gwB2qGoi5epSULMHugSVgpcVt5YAeiFO9ABLrutDQzKfGwzxgZHLpugq8qMdg/DhRZDZ5CLKxBkEbw==
@@ -5055,6 +5055,14 @@ metro-babel-transformer@0.56.3:
     "@babel/core" "^7.0.0"
     metro-source-map "0.56.3"
 
+metro-babel-transformer@0.57.0:
+  version "0.57.0"
+  resolved "https://registry.yarnpkg.com/metro-babel-transformer/-/metro-babel-transformer-0.57.0.tgz#8f4bd17ad5631937cdb5651e7d77f9c73b9f935c"
+  integrity sha512-679BstNiPUUt5a4f86iJTa7q8jFntgd9SQBVWN+CLI5L9T7iTxi7JDbR+oHIOi3OT/dBlY9s2dWZCVAuNW9DHA==
+  dependencies:
+    "@babel/core" "^7.0.0"
+    metro-source-map "0.57.0"
+
 metro-cache@0.56.3:
   version "0.56.3"
   resolved "https://registry.yarnpkg.com/metro-cache/-/metro-cache-0.56.3.tgz#1b0759bc45291cc3ffc77736c09dcfbd322edb8b"
@@ -5146,6 +5154,58 @@ metro-react-native-babel-preset@0.56.3:
     "@babel/template" "^7.0.0"
     react-refresh "^0.4.0"
 
+metro-react-native-babel-preset@0.57.0:
+  version "0.57.0"
+  resolved "https://registry.yarnpkg.com/metro-react-native-babel-preset/-/metro-react-native-babel-preset-0.57.0.tgz#bbbce26a20d9ca3fdc08f0df564bc982b82651b7"
+  integrity sha512-pvLh1QOwdxsjgYE2a+4aTKs3LSF3+t4jscxHtkND6wsJnKVVspLt8FkDaORa6zr3Fq12tVpEt5NJMdgtWqBpaA==
+  dependencies:
+    "@babel/plugin-proposal-class-properties" "^7.0.0"
+    "@babel/plugin-proposal-export-default-from" "^7.0.0"
+    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.0.0"
+    "@babel/plugin-proposal-object-rest-spread" "^7.0.0"
+    "@babel/plugin-proposal-optional-catch-binding" "^7.0.0"
+    "@babel/plugin-proposal-optional-chaining" "^7.0.0"
+    "@babel/plugin-syntax-dynamic-import" "^7.0.0"
+    "@babel/plugin-syntax-export-default-from" "^7.0.0"
+    "@babel/plugin-syntax-flow" "^7.2.0"
+    "@babel/plugin-transform-arrow-functions" "^7.0.0"
+    "@babel/plugin-transform-block-scoping" "^7.0.0"
+    "@babel/plugin-transform-classes" "^7.0.0"
+    "@babel/plugin-transform-computed-properties" "^7.0.0"
+    "@babel/plugin-transform-destructuring" "^7.0.0"
+    "@babel/plugin-transform-exponentiation-operator" "^7.0.0"
+    "@babel/plugin-transform-flow-strip-types" "^7.0.0"
+    "@babel/plugin-transform-for-of" "^7.0.0"
+    "@babel/plugin-transform-function-name" "^7.0.0"
+    "@babel/plugin-transform-literals" "^7.0.0"
+    "@babel/plugin-transform-modules-commonjs" "^7.0.0"
+    "@babel/plugin-transform-object-assign" "^7.0.0"
+    "@babel/plugin-transform-parameters" "^7.0.0"
+    "@babel/plugin-transform-react-display-name" "^7.0.0"
+    "@babel/plugin-transform-react-jsx" "^7.0.0"
+    "@babel/plugin-transform-react-jsx-source" "^7.0.0"
+    "@babel/plugin-transform-regenerator" "^7.0.0"
+    "@babel/plugin-transform-runtime" "^7.0.0"
+    "@babel/plugin-transform-shorthand-properties" "^7.0.0"
+    "@babel/plugin-transform-spread" "^7.0.0"
+    "@babel/plugin-transform-sticky-regex" "^7.0.0"
+    "@babel/plugin-transform-template-literals" "^7.0.0"
+    "@babel/plugin-transform-typescript" "^7.0.0"
+    "@babel/plugin-transform-unicode-regex" "^7.0.0"
+    "@babel/template" "^7.0.0"
+    react-refresh "^0.4.0"
+
+metro-react-native-babel-transformer@0.57.0:
+  version "0.57.0"
+  resolved "https://registry.yarnpkg.com/metro-react-native-babel-transformer/-/metro-react-native-babel-transformer-0.57.0.tgz#60e3b97f73f016c138096c1a706ccc3bc4590fcf"
+  integrity sha512-Pw8N3InjUVJT23w/LNKwrWeXY50aODv2js/WCfwguZqriJqELOCxF1BWgvsChGNuDpkl0ihKct4224w0+4ktyA==
+  dependencies:
+    "@babel/core" "^7.0.0"
+    babel-preset-fbjs "^3.3.0"
+    metro-babel-transformer "0.57.0"
+    metro-react-native-babel-preset "0.57.0"
+    metro-source-map "0.57.0"
+
 metro-react-native-babel-transformer@^0.56.0:
   version "0.56.3"
   resolved "https://registry.yarnpkg.com/metro-react-native-babel-transformer/-/metro-react-native-babel-transformer-0.56.3.tgz#e68205230be65c07290b932f7684226013dae310"
@@ -5177,6 +5237,19 @@ metro-source-map@0.56.3, metro-source-map@^0.56.0:
     source-map "^0.5.6"
     vlq "^1.0.0"
 
+metro-source-map@0.57.0:
+  version "0.57.0"
+  resolved "https://registry.yarnpkg.com/metro-source-map/-/metro-source-map-0.57.0.tgz#f6715b8687041804e4e0679bad4e8946bf9dd5a7"
+  integrity sha512-hYd2MmLUOmOJkQCzABLV3mYW7JwzkfvL9SUAHhRDzUS4Z69k+Yh2805HpH8/gN6SGvfw0PuPXXEixtvW66b6yQ==
+  dependencies:
+    "@babel/traverse" "^7.0.0"
+    "@babel/types" "^7.0.0"
+    invariant "^2.2.4"
+    metro-symbolicate "0.57.0"
+    ob1 "0.57.0"
+    source-map "^0.5.6"
+    vlq "^1.0.0"
+
 metro-symbolicate@0.56.3:
   version "0.56.3"
   resolved "https://registry.yarnpkg.com/metro-symbolicate/-/metro-symbolicate-0.56.3.tgz#20f9dc52fab3209903715716402692b3ac16831c"
@@ -5184,6 +5257,17 @@ metro-symbolicate@0.56.3:
   dependencies:
     invariant "^2.2.4"
     metro-source-map "0.56.3"
+    source-map "^0.5.6"
+    through2 "^2.0.1"
+    vlq "^1.0.0"
+
+metro-symbolicate@0.57.0:
+  version "0.57.0"
+  resolved "https://registry.yarnpkg.com/metro-symbolicate/-/metro-symbolicate-0.57.0.tgz#64693841190ad3d9b832af0490f16e95f51e4045"
+  integrity sha512-Gq30gqGAGYIpO7FdeUboQXaMUeiQqq2VNiPaLJg67zCz9FKLuS3Laf4i/mpUCzHv9+lqcEKIOEYP7SQaluUIPQ==
+  dependencies:
+    invariant "^2.2.4"
+    metro-source-map "0.57.0"
     source-map "^0.5.6"
     through2 "^2.0.1"
     vlq "^1.0.0"
@@ -5778,6 +5862,11 @@ ob1@0.56.3:
   version "0.56.3"
   resolved "https://registry.yarnpkg.com/ob1/-/ob1-0.56.3.tgz#5829e446587c9bf89c22ece4f3757b29f2ccfd18"
   integrity sha512-3JL2ZyWOHDGTEAe4kcG+TxhGPKCCikgyoUIjE82JnXnmpR1LXItM9K3WhGsi4+O7oYngMW6FjpHHoc5xJTMkTQ==
+
+ob1@0.57.0:
+  version "0.57.0"
+  resolved "https://registry.yarnpkg.com/ob1/-/ob1-0.57.0.tgz#2023173d54579ed5b28dc5943ab5d977401dbe0d"
+  integrity sha512-BRAyYcG7NeA8vZFQ/oMqw1fiRLdFcxi/x9DJ3KWeaSI7+tiO3MZwMjnkL9sdsZMEL4OtpggbeAK2dL3zYNiI1A==
 
 object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
