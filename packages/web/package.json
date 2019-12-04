@@ -1,17 +1,11 @@
 {
-  "name": "coran",
+  "name": "@coran/web",
   "version": "0.0.0",
-  "description": "Coran App Multidevice",
-  "repository": "https://github.com/ymeskini/coran.git",
-  "private": true,
+  "private": false,
   "scripts": {
-    "lint": "yarn workspaces run lint",
-    "tsc": "yarn workspaces run tsc"
-  },
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
+    "lint": "eslint \"./src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix \"./src/**/*.{ts,tsx}\"",
+    "tsc": "tsc"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "2.10.0",
