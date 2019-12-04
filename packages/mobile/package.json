@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "private": false,
   "scripts": {
-    "lint": "eslint \"./src/**/*.{ts,tsx,js}\"",
-    "lint:fix": "eslint --fix \"./src/**/*.{ts,tsx,js}\"",
-    "tsc": "tsc"
+    "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "tsc": "tsc",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\""
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "2.10.0",
