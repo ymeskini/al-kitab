@@ -6,7 +6,9 @@
     "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx}\"",
     "tsc": "tsc",
-    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\""
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "build:dev": "nodemon ./src/index.ts --exec \"ts-node\" ./src/index.ts -e ts,graphql",
+    "dev": "yarn build:dev"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "2.10.0",
@@ -15,5 +17,9 @@
     "eslint-plugin-prettier": "3.1.1",
     "prettier": "1.19.1",
     "typescript": "3.7.3"
+  },
+  "dependencies": {
+    "nodemon": "2.0.1",
+    "ts-node": "8.5.4"
   }
 }
