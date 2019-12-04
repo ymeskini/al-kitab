@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "lint": "yarn workspaces run lint",
-    "tsc": "yarn workspaces run tsc"
+    "tsc": "yarn workspaces run tsc",
+    "dev:web": "yarn workspace @coran/web dev"
   },
   "workspaces": {
     "packages": [

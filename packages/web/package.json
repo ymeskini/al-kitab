@@ -5,9 +5,14 @@
   "scripts": {
     "lint": "eslint \"./src/**/*.{ts,tsx}\"",
     "lint:fix": "eslint --fix \"./src/**/*.{ts,tsx}\"",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "devDependencies": {
+    "@types/node": "12.12.14",
+    "@types/react": "16.9.14",
     "@typescript-eslint/eslint-plugin": "2.10.0",
     "@typescript-eslint/parser": "2.10.0",
     "eslint": "6.7.2",
@@ -15,5 +20,10 @@
     "eslint-plugin-prettier": "3.1.1",
     "prettier": "1.19.1",
     "typescript": "3.7.3"
+  },
+  "dependencies": {
+    "next": "9.1.4",
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
   }
 }
