@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx}\"",
-    "tsc": "tsc",
+    "tsc": "tsc -b --incremental",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\"",
     "dev": "next",
     "build": "next build",
