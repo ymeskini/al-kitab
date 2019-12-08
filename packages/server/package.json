@@ -1,5 +1,5 @@
 {
-  "name": "@coran/api",
+  "name": "@coran/server",
   "version": "0.0.0",
   "private": false,
   "scripts": {
