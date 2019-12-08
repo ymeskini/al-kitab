@@ -5,19 +5,23 @@
   "repository": "https://github.com/ymeskini/coran.git",
   "private": true,
   "scripts": {
-    "lint": "yarn workspaces run lint",
-    "format": "yarn workspaces run format",
-    "tsc": "yarn workspaces run tsc",
+    "lint": "lerna run lint",
+    "format": "lerna run format",
+    "tsc": "lerna run tsc",
     "dev:web": "yarn workspace @coran/web dev",
     "dev:api": "yarn workspace @coran/api dev",
     "dev:mobile": "yarn workspace @coran/mobile start",
-    "dev:android": "yarn workspace @coran/mobile android"
+    "dev:android": "yarn workspace @coran/mobile android",
+    "diff": "lerna diff"
   },
   "workspaces": {
     "packages": [
       "packages/*"
     ],
-    "nohoist": ["**/react-native", "**/react-native/**"]
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**"
+    ]
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "2.10.0",
@@ -26,6 +30,7 @@
     "eslint-config-prettier": "6.7.0",
     "eslint-plugin-prettier": "3.1.1",
     "husky": "3.1.0",
+    "lerna": "3.19.0",
     "lint-staged": "9.5.0",
     "prettier": "1.19.1",
     "typescript": "3.6.3"
