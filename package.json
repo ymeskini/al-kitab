@@ -12,6 +12,7 @@
     "dev:api": "yarn workspace @coran/api dev",
     "dev:mobile": "yarn workspace @coran/mobile start",
     "dev:android": "yarn workspace @coran/mobile android",
+    "dev:ios": "yarn workspace @coran/mobile ios",
     "diff": "lerna diff"
   },
   "workspaces": {
