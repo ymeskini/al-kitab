@@ -8,7 +8,7 @@
     "tsc": "tsc -b --incremental",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\"",
     "android": "react-native run-android",
-    "start": "react-native start"
+    "start": "react-native start --projectRoot=../../"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "0.0.5",
@@ -30,9 +30,5 @@
     "@babel/runtime": "7.7.4",
     "react": "16.9.0",
     "react-native": "0.61.5"
-  },
-  "nohoist": [
-    "react-native",
-    "react-native/**"
-  ]
+  }
 }
