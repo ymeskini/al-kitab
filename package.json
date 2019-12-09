@@ -9,7 +9,7 @@
     "format": "lerna run format",
     "tsc": "lerna run tsc",
     "dev:web": "yarn workspace @coran/web dev",
-    "dev:api": "yarn workspace @coran/api dev",
+    "dev:server": "yarn workspace @coran/server dev",
     "dev:mobile": "yarn workspace @coran/mobile start",
     "dev:android": "yarn workspace @coran/mobile android",
     "dev:ios": "yarn workspace @coran/mobile ios",
