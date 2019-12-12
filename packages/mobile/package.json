@@ -7,9 +7,9 @@
     "lint:fix": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx}\"",
     "tsc": "tsc -b --incremental",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\"",
-    "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start --projectRoot=../../"
+    "start": "react-native start --projectRoot=../../",
+    "android": "android-studio ./android"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "0.0.5",
