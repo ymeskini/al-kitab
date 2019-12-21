@@ -6,10 +6,12 @@
     "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx}\"",
     "tsc": "tsc -b --incremental",
-    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\""
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "dev": "electron \"./src/\""
   },
   "devDependencies": {
     "@typescript-eslint/parser": "2.10.0",
+    "electron": "7.1.4",
     "eslint": "6.7.2",
     "eslint-config-prettier": "6.7.0",
     "eslint-plugin-prettier": "3.1.1",
