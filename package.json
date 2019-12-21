@@ -8,12 +8,16 @@
     "lint": "lerna run lint --parallel",
     "format": "lerna run format --parallel",
     "tsc": "lerna run tsc --parallel",
+    "lint": "lerna run lint",
+    "format": "lerna run format",
+    "tsc": "lerna run tsc",
+    "diff": "lerna diff",
     "dev:web": "yarn workspace @coran/web dev",
     "dev:server": "yarn workspace @coran/server dev",
     "dev:mobile": "yarn workspace @coran/mobile start",
     "dev:android": "yarn workspace @coran/mobile android",
     "dev:ios": "yarn workspace @coran/mobile ios",
-    "diff": "lerna diff",
+    "dev:desktop": "yarn workspace @coran/desktop dev",
     "deploy:web": "yarn workspace @coran/web deploy"
   },
   "workspaces": {
