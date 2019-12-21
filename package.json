@@ -11,9 +11,6 @@
     "lint": "lerna run lint --parallel",
     "format": "lerna run format --parallel",
     "tsc": "lerna run tsc --parallel",
-    "lint": "lerna run lint",
-    "format": "lerna run format",
-    "tsc": "lerna run tsc",
     "diff": "lerna diff",
     "dev:web": "yarn workspace @coran/web dev",
     "dev:server": "yarn workspace @coran/server dev",
@@ -39,17 +36,5 @@
     "lint-staged": "9.5.0",
     "prettier": "1.19.1",
     "typescript": "3.6.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "eslint --fix",
-      "prettier --write",
-      "git add"
-    ]
   }
 }
