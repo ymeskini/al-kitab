@@ -5,9 +5,9 @@
   "repository": "https://github.com/ymeskini/coran.git",
   "private": true,
   "scripts": {
-    "lint": "lerna run lint",
-    "format": "lerna run format",
-    "tsc": "lerna run tsc",
+    "lint": "lerna run lint --parallel",
+    "format": "lerna run format --parallel",
+    "tsc": "lerna run tsc --parallel",
     "dev:web": "yarn workspace @coran/web dev",
     "dev:server": "yarn workspace @coran/server dev",
     "dev:mobile": "yarn workspace @coran/mobile start",
