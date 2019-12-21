@@ -1,5 +1,5 @@
 {
-  "name": "@coran/core",
+  "name": "@al-kitab/core",
   "version": "0.0.0",
   "private": false,
   "scripts": {
@@ -7,13 +7,5 @@
     "lint:fix": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx}\"",
     "tsc": "tsc -b --incremental",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\""
-  },
-  "devDependencies": {
-    "@typescript-eslint/parser": "2.10.0",
-    "eslint": "6.7.2",
-    "eslint-config-prettier": "6.7.0",
-    "eslint-plugin-prettier": "3.1.1",
-    "prettier": "1.19.1",
-    "typescript": "3.6.3"
   }
 }

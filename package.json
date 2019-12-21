@@ -2,7 +2,7 @@
   "name": "coran",
   "version": "0.0.0",
   "description": "Coran App Multidevice",
-  "repository": "https://github.com/ymeskini/coran.git",
+  "repository": "https://github.com/ymeskini/al-kitab.git",
   "private": true,
   "engines": {
     "node": "12.13.0"
@@ -12,13 +12,13 @@
     "format": "lerna run format --parallel",
     "tsc": "lerna run tsc --parallel",
     "diff": "lerna diff",
-    "dev:web": "yarn workspace @coran/web dev",
-    "dev:server": "yarn workspace @coran/server dev",
-    "dev:mobile": "yarn workspace @coran/mobile start",
-    "dev:android": "yarn workspace @coran/mobile android",
-    "dev:ios": "yarn workspace @coran/mobile ios",
-    "dev:desktop": "yarn workspace @coran/desktop dev",
-    "deploy:web": "yarn workspace @coran/web deploy"
+    "dev:web": "yarn workspace @al-kitab/web dev",
+    "dev:server": "yarn workspace @al-kitab/server dev",
+    "dev:mobile": "yarn workspace @al-kitab/mobile start",
+    "dev:android": "yarn workspace @al-kitab/mobile android",
+    "dev:ios": "yarn workspace @al-kitab/mobile ios",
+    "dev:desktop": "yarn workspace @al-kitab/desktop dev",
+    "deploy:web": "yarn workspace @al-kitab/web deploy"
   },
   "workspaces": {
     "packages": [

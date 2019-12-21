@@ -18,7 +18,6 @@ function createWindow() {
   // and load the index.html of the app.
   win.loadURL('http://localhost:3000');
 
-
   // Émit lorsque la fenêtre est fermée.
   win.on('closed', () => {
     // Dé-référence l'objet window , normalement, vous stockeriez les fenêtres
