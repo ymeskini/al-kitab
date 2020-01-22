@@ -3,23 +3,21 @@
   "version": "0.0.0",
   "private": false,
   "scripts": {
-    "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
-    "lint:fix": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx}\"",
-    "tsc": "tsc -b --incremental",
-    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint \"./src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix \"./src/**/*.{ts,tsx}\"",
+    "tsc": "tsc -b",
+    "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "deploy": "yarn now"
+    "start": "next start"
   },
   "devDependencies": {
-    "@types/node": "12.12.14",
-    "@types/react": "16.9.14",
-    "now": "16.6.3"
+    "@types/node": "13.11.0",
+    "@types/react": "16.9.32"
   },
   "dependencies": {
-    "next": "9.1.4",
-    "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "next": "9.3.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   }
 }

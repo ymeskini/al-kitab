@@ -1,24 +1,15 @@
 {
-  "name": "coran",
+  "name": "school",
   "version": "0.0.0",
-  "description": "Coran App Multidevice",
   "repository": "https://github.com/ymeskini/al-kitab.git",
   "private": true,
-  "engines": {
-    "node": "12.13.0"
-  },
   "scripts": {
     "lint": "lerna run lint --parallel",
     "format": "lerna run format --parallel",
     "tsc": "lerna run tsc --parallel",
     "diff": "lerna diff",
     "dev:web": "yarn workspace @al-kitab/web dev",
-    "dev:server": "yarn workspace @al-kitab/server dev",
-    "dev:mobile": "yarn workspace @al-kitab/mobile start",
-    "dev:android": "yarn workspace @al-kitab/mobile android",
-    "dev:ios": "yarn workspace @al-kitab/mobile ios",
-    "dev:desktop": "yarn workspace @al-kitab/desktop dev",
-    "deploy:web": "yarn workspace @al-kitab/web deploy"
+    "dev:api": "yarn workspace @al-kitab/api dev"
   },
   "workspaces": {
     "packages": [
@@ -26,15 +17,13 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "2.10.0",
-    "@typescript-eslint/parser": "2.10.0",
-    "eslint": "6.7.2",
-    "eslint-config-prettier": "6.7.0",
-    "eslint-plugin-prettier": "3.1.1",
-    "husky": "3.1.0",
-    "lerna": "3.19.0",
-    "lint-staged": "9.5.0",
-    "prettier": "1.19.1",
-    "typescript": "3.6.3"
+    "@typescript-eslint/eslint-plugin": "2.27.0",
+    "@typescript-eslint/parser": "2.27.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.10.1",
+    "eslint-plugin-prettier": "3.1.2",
+    "lerna": "3.20.2",
+    "prettier": "2.0.4",
+    "typescript": "3.8.3"
   }
 }
