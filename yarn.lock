@@ -1983,6 +1983,11 @@
   dependencies:
     "@types/node" ">= 8"
 
+"@prisma/cli@2.0.0-beta.1":
+  version "2.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@prisma/cli/-/cli-2.0.0-beta.1.tgz#7e5f13db65244cf723323c3046d63cd744f2f026"
+  integrity sha512-uMCthsNkLCmQiPs6veMdqT/Y4RWRbn8Y0GAfqvg+qStene6Pqid7DTrdN7hC+VYlY7Ok5Fxcb6oBis1jsOO7pQ==
+
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@protobufjs/aspromise/-/aspromise-1.1.2.tgz#9b8b0cc663d669a7d8f6f5d0893a14d348f30fbf"
