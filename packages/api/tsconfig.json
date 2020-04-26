@@ -1,5 +1,4 @@
 {
-  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "allowJs": true,
     "module": "commonjs",
@@ -10,21 +9,15 @@
     "outDir": "./public",
     "lib": ["es6"],
     "resolveJsonModule": true,
-    "types": ["node"],
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
+    "types": ["node", "jest"],
     "esModuleInterop": true,
     "isolatedModules": false,
-    "noEmit": false
+    "noEmit": true
   },
+  "exclude": ["node_modules", "src/**/*.test.ts"],
   "include": [
     "src/*.ts",
     "src/**/*.ts",
     "src/**/*.js"
-  ],
-  "exclude": [
-    "node_modules",
-    "src/**/*.spec.ts",
-    "src/**/*.spec.js"
   ]
 }

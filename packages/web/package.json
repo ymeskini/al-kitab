@@ -9,7 +9,8 @@
     "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest"
   },
   "devDependencies": {
     "@types/node": "13.11.0",
