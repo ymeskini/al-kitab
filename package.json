@@ -10,7 +10,8 @@
     "test": "lerna run test --parallel",
     "diff": "lerna diff",
     "dev:web": "yarn workspace @al-kitab/web dev",
-    "dev:api": "yarn workspace @al-kitab/api dev"
+    "dev:api": "yarn workspace @al-kitab/api dev",
+    "build:web": "yarn workspace @al-kitab/web build"
   },
   "workspaces": {
     "packages": [
