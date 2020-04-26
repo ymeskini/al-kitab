@@ -6,7 +6,7 @@ import bodyParser from 'body-parser';
 import morgan from 'morgan';
 
 const origin = {
-  origin: '*' /* in prod get the url of front and mobile */,
+  origin: '*',
 };
 
 const app = express();
@@ -17,6 +17,8 @@ app.use(helmet());
 app.use(compression());
 app.use(cors(origin));
 app.use(morgan('tiny'));
+
+app.get('/', (req, res) => res.json({ message: 'Hello World' }));
 
 app.listen({ port: 4000 }, () => {
   console.log(`🚀 Server ready at http://localhost:4000`);
