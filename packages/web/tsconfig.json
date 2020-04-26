@@ -17,7 +17,8 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "types": [
-      "jest"
+      "jest",
+      "react"
     ],
     "isolatedModules": true
   },
