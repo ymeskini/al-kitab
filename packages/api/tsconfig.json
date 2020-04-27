@@ -11,13 +11,8 @@
     "resolveJsonModule": true,
     "types": ["node", "jest"],
     "esModuleInterop": true,
-    "isolatedModules": false,
-    "noEmit": true
+    "isolatedModules": false
   },
   "exclude": ["node_modules", "src/**/*.test.ts"],
-  "include": [
-    "src/*.ts",
-    "src/**/*.ts",
-    "src/**/*.js"
-  ]
+  "include": ["src/*.ts", "src/**/*.ts", "src/**/*.js"]
 }

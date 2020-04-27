@@ -1,1 +1,9 @@
-node_modules
+*
+!./package.json
+!./yarn.lock
+
+!./packages/api/package.json
+!./packages/core/package.json
+!./packages/web/package.json
+
+!./packages/api/public
