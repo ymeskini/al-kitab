@@ -3,6 +3,9 @@ const { resolve } = require('path');
 
 const commonConfig = {
   entry: [resolve('src', 'index.tsx')],
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
   module: {
     rules: [
       {
@@ -10,6 +13,11 @@ const commonConfig = {
         use: {
           loader: 'babel-loader',
         },
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
         exclude: /node_modules/,
       },
     ],
