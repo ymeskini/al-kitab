@@ -8,9 +8,19 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+/* Border box declaration 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  /* apply a natural box layout model to all elements, but allowing components to change */
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 /* Sections

@@ -20,6 +20,6 @@ app.use(morgan('tiny'));
 
 app.get('/', (req, res) => res.json({ message: 'Hello World' }));
 
-app.listen({ port: process.env.PORT }, () => {
-  console.log(`🚀 Server ready at http://localhost:${process.env.PORT}`);
+app.listen({ port: 4000 }, () => {
+  console.log(`🚀 Server ready at http://localhost:${4000}`);
 });
