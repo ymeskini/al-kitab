@@ -11,6 +11,7 @@ const devConfig = {
     open: true,
     hot: true,
   },
+  devtool: 'inline-source-map',
   mode: 'development',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
