@@ -4,6 +4,7 @@ import compression from 'compression';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
+import { v1Router } from './api/v1';
 
 const origin = {
   origin: '*',
@@ -18,7 +19,7 @@ app.use(compression());
 app.use(cors(origin));
 app.use(morgan('tiny'));
 
-app.get('/', (req, res) => res.json({ message: 'Hello World' }));
+app.use('/api/v1', v1Router);
 
 app.listen({ port: 4000 }, () => {
   console.log(`🚀 Server ready at http://localhost:${4000}`);
