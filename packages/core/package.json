@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint \"./src/**/*.{ts,tsx}\"",
     "lint:fix": "eslint --fix \"./src/**/*.{ts,tsx}\"",
-    "tsc": "tsc -b",
+    "tsc": "tsc",
     "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
     "test": "jest"
   }
