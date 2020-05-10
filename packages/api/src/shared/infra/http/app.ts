@@ -17,10 +17,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(helmet());
 app.use(compression());
 app.use(cors(origin));
-app.use(morgan('tiny'));
+app.use(morgan('dev'));
 
 app.use('/api/v1', v1Router);
+app.get('*', (_, res) => res.sendStatus(403));
 
-app.listen({ port: 4000 }, () => {
-  console.log(`🚀 Server ready at http://localhost:${4000}`);
+app.listen(process.env.PORT, () => {
+  console.log(`🚀 Server ready at http://localhost:${process.env.PORT}`);
 });

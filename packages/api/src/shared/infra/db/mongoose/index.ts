@@ -5,7 +5,7 @@ const options = {
   useUnifiedTopology: true,
 };
 
-mongoose.connect('mongodb://localhost/al-kitab', options);
+mongoose.connect(process.env.MONGODB_URL as string, options);
 
 const db = mongoose.connection;
 
