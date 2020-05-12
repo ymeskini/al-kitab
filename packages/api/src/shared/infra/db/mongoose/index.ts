@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 const options = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useCreateIndex: true,
 };
 
 mongoose.connect(process.env.MONGODB_URL as string, options);
